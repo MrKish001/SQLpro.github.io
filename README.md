@@ -83,7 +83,7 @@ From layoff_staging
 
 
 delete 
-From layoff_staging2                     
+From layoff_staging2                                       /* Deleted the duplicate value having row-num>1*/ 
 Where row_num > 1 
 ;
           
@@ -91,7 +91,7 @@ Select *
 From layoff_staging2    
 ;        
 
-                                                            -- Standardiing data
+                                                            -- Standardizing data
 
 Select company, trim(company)
 From layoff_staging2

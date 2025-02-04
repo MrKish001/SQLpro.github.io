@@ -9,7 +9,7 @@ What I'll be doig in this SQL Query-
 
    ---------------------------------------------------------------------------------------------    ----------------   -----------  -------  ----  --
 
- Select *                    /* Checking all the raw data */
+ Select *                                   /* Checking all the raw data */
 FROM layoffs;
 
 Create Table layoff_staging
@@ -44,7 +44,7 @@ Where row_num>1
 ;
 
 Select*
-From layoff_staging                      /* Checking duplicate values */   
+From layoff_staging                                               /* Checking duplicate values */   
 Where company = 'Casper'
 ;
 
@@ -60,7 +60,7 @@ CREATE TABLE `layoff_staging2` (
   `location` text,
   `industry` text,
   `total_laid_off` int DEFAULT NULL,
-  `percentage_laid_off` text,                        /* Creating new table to delet the duplicate value having  row-num>2*/ 
+  `percentage_laid_off` text,                                   /* Creating new table to delete the duplicate value having  row-num>2*/ 
   `date` text,
   `stage` text,
   `country` text,

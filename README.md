@@ -60,7 +60,7 @@ CREATE TABLE `layoff_staging2` (
   `location` text,
   `industry` text,
   `total_laid_off` int DEFAULT NULL,
-  `percentage_laid_off` text,                                   /* Creating new table to delete the duplicate value having  row-num>2*/ 
+  `percentage_laid_off` text,                                   /* Creating new table to delete the duplicate value having  row-num>1*/ 
   `date` text,
   `stage` text,
   `country` text,
